@@ -39,19 +39,6 @@ def distinct_list_elements(lst):
     if node not in distinct_flat_node_tree_list:
         distinct_flat_node_tree_list.append(node)
 
-def create_diagraph_file(edges_deduped):
-    g = graphviz.Digraph('G', filename='json_tree.gv', format='png')
-    digraphStr = 'strict digraph tree {\n'
-    for row in edges_deduped:
-        digraphStr = digraphStr + '    {0} -> {1};\n'.format(*row)
-        g.edge(*row)
-    digraphStr = digraphStr + '}'
-    print(digraphStr)
-    graph_img_filePath = os.path.join(os.getcwd(), 'json_tree.gv')
-    with open(graph_img_filePath, "w") as text_file:
-        text_file.write(digraphStr)
-    return graph_img_filePath
-
 def distinct_depth_nodes(d, root):
   for a, b in d.items():
       if isinstance(b, dict):
