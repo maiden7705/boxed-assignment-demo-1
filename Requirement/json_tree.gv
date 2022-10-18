@@ -1,0 +1,12 @@
+strict digraph tree {
+    properties -> performance;
+    properties -> queryParameters;
+    properties -> smartbrand;
+    properties -> filterMethod;
+    address -> telephoneVerification;
+    properties -> bsProperties;
+    event -> properties;
+    properties -> report;
+    properties -> thestralFeatures;
+    properties -> address;
+}
