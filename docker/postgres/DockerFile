@@ -1,0 +1,8 @@
+FROM postgres:15.0
+ENV POSTGRES_USER boxed
+ENV POSTGRES_PASSWORD password
+ENV POSTGRES_DB boxed
+COPY ./docker/postgres/ddl_script.sql /docker-entrypoint-initdb.d/ddl_script.sql
+COPY ./docker/postgres/init-db.sh /docker-entrypoint-initdb.d/init-db.sh
+RUN chmod -R 775 /docker-entrypoint-initdb.d
+EXPOSE 5432
