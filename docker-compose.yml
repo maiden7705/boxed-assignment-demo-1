@@ -1,0 +1,21 @@
+version: '2'
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=events
+    container_name: 'mysql-8.0'
+    ports:
+      - '34532:3306'
+    restart: always
+
+  python3:
+    restart: always
+    build: './docker/python3'
+    container_name: 'python3.8'
+    tty: true
+    volumes:
+      - ".:/code"
+    links:
+      - db   # MySQL 接続のホスト名
