@@ -1,12 +1,12 @@
 digraph G {
-	properties -> report
-	properties -> performance
-	properties -> bsProperties
-	properties -> filterMethod
-	properties -> smartbrand
-	address -> telephoneVerification
 	event -> properties
+	properties -> filterMethod
+	address -> telephoneVerification
+	properties -> report
 	properties -> thestralFeatures
+	properties -> smartbrand
+	properties -> bsProperties
 	properties -> address
 	properties -> queryParameters
+	properties -> performance
 }
