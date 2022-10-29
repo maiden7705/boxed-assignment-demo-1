@@ -77,13 +77,17 @@ Open a new [VS Code Terminal](https://code.visualstudio.com/docs/terminal/basics
 
 ## Installing the VS Code extensions
 run the following command in terminal window
-* Linux / macOS
+* ### Linux / macOS
+
+    open a terminal window and run this from project directory root
     ```console
     ./extensions/vs_code_extensions.sh
     ```
-* Windows
+* ### Windows
+    
+    open a command prompt from start menu and cd into project root directory and run this
     ```console
-    \extensions\vs_code_extensions.bat
+    cmd.exe /c ".\extensions\vs_code_extensions.bat"
     ```
 
 ## Running the code

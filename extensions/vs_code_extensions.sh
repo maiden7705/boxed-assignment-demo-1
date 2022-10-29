@@ -1,20 +1,20 @@
-code --install-extension amazonwebservices.aws-toolkit-vscode
-code --install-extension GrapeCity.gc-excelviewer
-code --install-extension hilleer.yaml-plus-json
-code --install-extension joaompinto.vscode-graphviz
-code --install-extension mechatroner.rainbow-csv
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
-code --install-extension ms-toolsai.jupyter
-code --install-extension ms-toolsai.jupyter-keymap
-code --install-extension ms-toolsai.jupyter-renderers
-code --install-extension ms-toolsai.vscode-jupyter-cell-tags
-code --install-extension ms-toolsai.vscode-jupyter-slideshow
-code --install-extension ms-vscode-remote.remote-containers
-code --install-extension ms-vscode-remote.remote-ssh
-code --install-extension ms-vscode-remote.remote-ssh-edit
-code --install-extension ms-vscode-remote.remote-wsl
-code --install-extension ms-vscode-remote.vscode-remote-extensionpack
-code --install-extension RandomFractalsInc.vscode-data-preview
-code --install-extension tomoki1207.pdf
+code --install-extension amazonwebservices.aws-toolkit-vscode --force
+code --install-extension GrapeCity.gc-excelviewer --force
+code --install-extension hilleer.yaml-plus-json --force
+code --install-extension joaompinto.vscode-graphviz --force
+code --install-extension mechatroner.rainbow-csv --force
+code --install-extension ms-azuretools.vscode-docker --force
+code --install-extension ms-python.python --force
+code --install-extension ms-python.vscode-pylance --force
+code --install-extension ms-toolsai.jupyter --force
+code --install-extension ms-toolsai.jupyter-keymap --force
+code --install-extension ms-toolsai.jupyter-renderers --force
+code --install-extension ms-toolsai.vscode-jupyter-cell-tags --force
+code --install-extension ms-toolsai.vscode-jupyter-slideshow --force
+code --install-extension ms-vscode-remote.remote-containers --force
+code --install-extension ms-vscode-remote.remote-ssh --force
+code --install-extension ms-vscode-remote.remote-ssh-edit --force
+code --install-extension ms-vscode-remote.remote-wsl --force
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack --force
+code --install-extension RandomFractalsInc.vscode-data-preview --force
+code --install-extension tomoki1207.pdf --force
