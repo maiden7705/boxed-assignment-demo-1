@@ -27,4 +27,12 @@ The above command will create:
 ### Checking Database
     http://localhost:8081/
 
+![sql client homepage](/documentations/sql_client_homepage.png)
+
+
+![sql client tables](/documentations/sql_client_checking_tables.png)
+
+## Understanding of JSON structure
+To understand the design justification of 2NF normalized form of seperate tables, refer to this [jupyter notebook](/Requirement/understanding_json_structure.ipynb)
+
 
