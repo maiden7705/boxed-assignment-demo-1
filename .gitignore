@@ -1,1 +1,5 @@
 .env
+random_code_tryouts.py
+output_data_formats/
+pip_package_dependency.txt
+get_container_ip.txt

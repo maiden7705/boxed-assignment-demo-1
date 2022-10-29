@@ -1,12 +1,12 @@
-strict digraph tree {
-    properties -> thestralFeatures;
-    properties -> bsProperties;
-    properties -> address;
-    address -> telephoneVerification;
-    properties -> smartbrand;
-    properties -> filterMethod;
-    event -> properties;
-    properties -> performance;
-    properties -> report;
-    properties -> queryParameters;
+digraph G {
+	properties -> report
+	properties -> performance
+	properties -> bsProperties
+	properties -> filterMethod
+	properties -> smartbrand
+	address -> telephoneVerification
+	event -> properties
+	properties -> thestralFeatures
+	properties -> address
+	properties -> queryParameters
 }

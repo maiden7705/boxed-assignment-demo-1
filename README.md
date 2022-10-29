@@ -1,19 +1,30 @@
-# Pre-Installation
-Make sure you have **python3**, **pip**, **git**, **docker** installed in your local environment (macOS / Linux).  
-If you are running this on **windows 10 Pro (2.x+)** I'd highly recommend open/clone this project in a __[WSL2 sub-system](https://code.visualstudio.com/blogs/2019/09/03/wsl2)__.  
-Also make sure in whichever OS you are running it in, the recommended way forward for docker is now through __[Docker Desktop](https://www.docker.com/products/docker-desktop/)__ instead of commandline docker engine, though even that might work, i have not backward tested it with older "cli-only" docker.  
-
-__IMPORTANT NETWORK REQUIREMENT__: Also, make sure you **ARE NOT** running this in your private organization's / personal VPN or proxy IPs and that commandline access to pip / apt-get / yum / docker (*whichever is your preferred installation method*) is not blocked or hindered.
-
 # Pre-requisites
-### Installing the virtual environment
-    pip install virtualenv
-    virtualenv --version
+Make sure you have the following installed and appropriate **$PATH** modifications done in your OS of choice (MacOS / Linux / Windows):
+
+* **git** (_version 2.37.x_)
+* **docker** (_version 20.x_) (_[Docker Desktop](https://www.docker.com/products/docker-desktop/) recommended_)
+
+_NOTE : I have not tested this to older versions of above pre-requisites_
+
+__IMPORTANT NETWORK REQUIREMENT__: Also, make sure you **ARE NOT** running this in your private organization's / personal VPN or proxy IPs and that commandline access to pip / apt-get / yum / docker / docker-compose (*whichever is your preferred installation method*) is not blocked or hindered.  
+
+_NOTE : modified the **testEventData-1.txt** file at line 251 to test out multi dictionary list of **properties.variants**_
+# Installation
 ### Cloning the Repo
-    cd ~/{your-project-directory}
-    git clone  https://github.com/maiden7705/boxed-assignment-demo-1.git
-    cd ~/{your-project-directory}/boxed-assignment-demo-1
-### [OPTIONAL] Incase you are using vs code
-    # open the vs code on WSL subsystem through your cloned folder
-    code .
-### make your virtual environment directory
+    % cd ~/{your-project-directory}
+    % git clone  https://github.com/maiden7705/boxed-assignment-demo-1.git
+    % cd ~/{your-project-directory}/boxed-assignment-demo-1
+### Creating Docker containers
+    % docker-compose --verbose build --no-cache
+    % docker-compose up -d
+The above command will create:
+* [mySql-8.0](https://hub.docker.com/_/mysql), (_your backend database_)
+* [python-3.10-bullseye](https://hub.docker.com/_/python), (_your ETL Code_)
+* [phpmyadmin-5.0](https://hub.docker.com/_/phpmyadmin), (_Database web client_: to view tables)
+### Running ETL Code
+    % docker exec -i -t python3.11 bash
+    % python ETL-json-to-SQL.py
+### Checking Database
+    http://localhost:8081/
+
+

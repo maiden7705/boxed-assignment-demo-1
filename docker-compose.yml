@@ -1,21 +1,51 @@
-version: '2'
+version: '3'
 services:
   db:
     image: mysql:8.0
     environment:
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=events
+      - MYSQL_DATABASE=web_scraping
     container_name: 'mysql-8.0'
+    # networks:
+    #   customnetwork:
+    #     ipv4_address: 172.18.1.3 / 34532
     ports:
-      - '34532:3306'
+      - '3306:3306'
     restart: always
+    volumes:
+      - dbdata:/var/lib/mysql
 
   python3:
     restart: always
     build: './docker/python3'
-    container_name: 'python3.8'
+    container_name: 'python3.11'
+    # networks:
+    #   customnetwork:
+    #     ipv4_address: 172.18.1.4
     tty: true
     volumes:
       - ".:/code"
     links:
-      - db   # MySQL 接続のホスト名
+      - db
+  phpmyadmin:
+    image: phpmyadmin:5.0
+    container_name: pma-client
+    # networks:
+    #   customnetwork:
+    #     ipv4_address: 172.18.1.5
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
+volumes:
+  dbdata:
+# networks:
+#   customnetwork:
+#     ipam:
+#       config:
+#         - subnet: 172.18.1.0/24

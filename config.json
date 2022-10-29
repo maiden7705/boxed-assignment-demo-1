@@ -1,0 +1,13 @@
+{
+    "version": 1.0,
+    "coalesce": {
+        "cartVariantSubtotalValue" : [
+            "cartVariantSubtotalValue",
+            "cartVariantsSubtotalValue"
+        ],
+        "ipAddress" : [
+            "ip",
+            "ipAddress"
+        ]
+    }
+}

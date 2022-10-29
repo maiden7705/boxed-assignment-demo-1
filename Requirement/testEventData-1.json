@@ -45149,6 +45149,10 @@
                     {
                         "quantity": 1,
                         "variant": "5277cc4a49041ca90b000028"
+                    },
+                    {
+                        "quantity": 2,
+                        "variant": "5277cc4a49041ca90b000031"
                     }
                 ],
                 "hasSampleItem": false,
