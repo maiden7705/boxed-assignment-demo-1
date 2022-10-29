@@ -8,7 +8,7 @@ _NOTE : I have not tested this to older versions of above pre-requisites_
 
 __IMPORTANT NETWORK REQUIREMENT__: Also, make sure you **ARE NOT** running this in your private organization's / personal VPN or proxy IPs and that commandline access to pip / apt-get / yum / docker / docker-compose (*whichever is your preferred installation method*) is not blocked or hindered.  
 
-_NOTE : modified the **testEventData-1.txt** file at line 251 to test out multi dictionary list of **properties.variants**_
+_NOTE : modified the **[testEventData-1.txt](Requirement/testEventData-1.txt)** file at line 251 to test out multi dictionary list of **properties.variants**_
 # Installation
 ### Cloning the Repo
     % cd ~/{your-project-directory}
