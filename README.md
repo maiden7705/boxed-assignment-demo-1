@@ -24,6 +24,7 @@ The above command will create:
 ### Running ETL Code
     % docker exec -i -t python3.11 bash
     % python ETL-json-to-SQL.py
+This will put normalized 2NF table structure into database called **web_scraping**
 ### Checking Database
     http://localhost:8081/
 
@@ -35,4 +36,7 @@ The above command will create:
 ## Understanding of JSON structure
 To understand the design justification of 2NF normalized form of seperate tables, refer to this [jupyter notebook](/Requirement/understanding_json_structure.ipynb)
 
+### Table Schema Design
+
+![Schema Design](/documentations/Boxed-Demo-DDL-schema.png)
 
