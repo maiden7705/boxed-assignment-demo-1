@@ -33,10 +33,59 @@ This will put normalized 2NF table structure into database called **web_scraping
 
 ![sql client tables](/documentations/sql_client_checking_tables.png)
 
-## Understanding of JSON structure
+# Understanding of JSON structure
 To understand the design justification of 2NF normalized form of seperate tables, refer to this [jupyter notebook](/Requirement/understanding_json_structure.ipynb)
 
-### Table Schema Design
+## Table Schema Design
 
 ![Schema Design](/documentations/Boxed-Demo-DDL-schema.png)
 
+## DDL scripts
+the DDL scripts to above schema can be found [here](DDL_scripts.sql)
+
+# VS Code Debugging [OPTIONAL]
+If you choose to see or debug the project in [VS code](https://code.visualstudio.com/), perform the following steps:
+
+## Pre-requisites
+Make sure you have following installed:  
+
+* [VS code](https://code.visualstudio.com/)
+* [python 3.11](https://www.python.org/downloads/) (_This should be preinstalled by virtue of having VS Code_)
+* [pip3](https://pypi.org/project/pip/)
+    ```console
+    python -m pip install --upgrade pip
+    ```
+## Cloning the Repo
+    % cd ~/{your-project-directory}
+    % git clone https://github.com/maiden7705/boxed-assignment-demo-1.git
+    % cd ~/{your-project-directory}/boxed-assignment-demo-1
+
+## Open VS Code from project folder
+
+    % cd ~/{your-project-directory}/boxed-assignment-demo-1
+    code .
+
+## Install python virtual environment
+Open a new [VS Code Terminal](https://code.visualstudio.com/docs/terminal/basics) in opened project folder
+
+    python3 -m pip install virtualenv
+    mkdir .env
+    cd .env
+    python3 -m virtualenv .
+## Install all the pre-requisite libraries
+    pip install -r ./docker/python3/requirements.txt
+
+## Installing the VS Code extensions
+run the following command in terminal window
+* Linux / macOS
+    ```console
+    ./extensions/vs_code_extensions.sh
+    ```
+* Windows
+    ```console
+    \extensions\vs_code_extensions.bat
+    ```
+
+## Running the code
+Open and run the file **ETL-json-to-SQL.py**
+![Run the scripot](/documentations/running_the_Script.png)

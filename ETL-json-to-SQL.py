@@ -26,22 +26,20 @@ if __name__ == '__main__':
 
     # pandas's json_normalize() works like a charm on nested "dictionary of dictionaries"
     # but fails to implictly flatten value of a key if its "list of dictionaries".
-    # so below code hack  (line #23 to #26) is needed
+    # so below code hack  (line #30 to #33) is needed
     for event in events:
         u.find_values_as_list_of_dicts(event)
     u.VALUE_AS_LIST = list(set(u.VALUE_AS_LIST))
     events_denormalized_df = u.flatten_list_of_dict_keys_to_seperate_columns(events_denormalized_df)
 
-    # line #29 through #31 takes care of normalizing large flat table into seperate smaller tables dictionary
+    # line #36 through #39 takes care of normalizing large flat table into seperate smaller tables dictionary
     sorted_col_list = events_denormalized_df.columns.tolist()
     sorted_col_list.sort()
     u.seperate_table_from_flattened_col_list(sorted_col_list)
-        
     table_schema_json["events"] = u.TABLE_SCHEMA_DICT
 
-
-    ####################################################################
-    ###################### LOAD INTO MYSQL TABLE #######################
+    ############################ LOAD ##################################
+    #################### LOAD INTO MYSQL DATABASE ######################
     ####################################################################
     mySql_str = u.get_connection_string_to_mysql()
             
@@ -70,6 +68,7 @@ if __name__ == '__main__':
         eventId_col = df.pop('eventId')
         df.insert(0, 'eventId', eventId_col)
         
+        # step-05 : Save this dataframe to mySQl table
         # NOTE: Pandas is, in no way, a fullfledged database connection and updation engine
         # but for purpose of this demo, we can use a quick 'to_sql' (simple yet powerful) function
         # to showcase the resulting schema, if table already exist it will simply "truncate and load" the table
