@@ -46,6 +46,13 @@ Expand the database **web_scraping** to see the 2NF normalized table structure
 
 ![sql client tables](/documentations/sql_client_checking_tables.png)
 
+## Stopping docker containers and removing compose image
+```console
+% cd ~/{your-project-directory}/boxed-assignment-demo-1
+% docker-compose down
+% docker image rm --force $(docker images | grep boxed* | awk '{print $1}')
+```
+
 # Running in Host (VS Code) [OPTIONAL]
 If you choose to see or debug the project in [VS code](https://code.visualstudio.com/), perform the following steps:
 
