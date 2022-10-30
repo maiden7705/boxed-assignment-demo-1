@@ -243,4 +243,4 @@ def get_connection_string_to_mysql():
   port=docker_compose['services']['db']['ports'][0].split(':')[0]
   database_name=docker_compose['services']['db']['environment'][1].split('=')[1]
 
-  return f'mysql://{username}:{password}@{hostname}/{database_name}'
+  return f'mysql://{username}:{password}@{hostname}:{port}/{database_name}'

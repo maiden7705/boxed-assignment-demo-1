@@ -6,7 +6,12 @@ Make sure you have the following installed and appropriate **$PATH** modificatio
 
 _NOTE : I have not tested this to older versions of above pre-requisites_
 
-__IMPORTANT NETWORK REQUIREMENT__: Also, make sure you **ARE NOT** running this in your private organization's / personal VPN or proxy IPs and that commandline access to pip / apt-get / yum / docker / docker-compose (*whichever is your preferred installation method*) is not blocked or hindered.  
+__IMPORTANT NETWORK REQUIREMENT__: 
+* Make sure you **ARE NOT** running this in your private organization's / personal VPN or proxy IPs and that commandline access to pip / apt-get / yum / docker / docker-compose (*whichever is your preferred installation method*) is not blocked or hindered.  
+
+* Make sure the following ports are not blocked on host:
+    * **3306**&nbsp;&nbsp;: for My SQL TCP/IP connection
+    * **8081**&nbsp;&nbsp;: for phpMyAdmin client to view SQL tables
 
 _NOTE : modified the **[testEventData-1.txt](Requirement/testEventData-1.txt)** file at line 251 to test out multi dictionary list of **properties.variants**_
 # Installation
