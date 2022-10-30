@@ -105,7 +105,8 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
         ```
 
 * ## Installing the VS Code extensions
-    run the following command in terminal window
+    run the following command in terminal window  
+    (_**NOTE**: These are all the extensions I have installed, some of which may or may not be needed to explore this code in VS Code, but safe to just replicate_)
     * ### Linux / macOS
         open a terminal window and run this from project directory root:
         ```console
