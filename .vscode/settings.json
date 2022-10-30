@@ -2,5 +2,10 @@
     "python.languageServer": "Pylance",
     "python.analysis.extraPaths": [
         "${workspaceFolder}/.env/lib"
-    ]
+    ],
+    "jupyter.kernels.filter": [
+        {
+          "path": "${workspaceFolder}/.env/Scripts/python.exe"
+        }
+      ]
 }
