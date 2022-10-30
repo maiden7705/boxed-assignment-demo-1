@@ -13,7 +13,6 @@ __IMPORTANT NETWORK REQUIREMENT__:
     * **3306**&nbsp;&nbsp;: for My SQL TCP/IP connection
     * **8081**&nbsp;&nbsp;: for phpMyAdmin client to view SQL tables
 
-_NOTE : modified the **[testEventData-1.txt](Requirement/testEventData-1.txt)** file at line 251 to test out multi dictionary list of **properties.variants**_
 # Installation
 ### Cloning the Repo
     % cd ~/{your-project-directory}
@@ -40,6 +39,8 @@ This will put normalized 2NF table structure into database called **web_scraping
 
 # Understanding of JSON structure
 To understand the design justification of 2NF normalized form of seperate tables, refer to this [jupyter notebook](/Requirement/understanding_json_structure.ipynb)
+
+_NOTE : I have modified the **[testEventData-1.txt](Requirement/testEventData-1.txt)** file at line 251 to test out multi dictionary list of **properties.variants**_
 
 ## Table Schema Design
 
