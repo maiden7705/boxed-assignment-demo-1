@@ -52,7 +52,11 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
     Make sure you have following installed:  
 
     * [VS code](https://code.visualstudio.com/)
-    * [python 3.11](https://www.python.org/downloads/) (_This should be preinstalled by virtue of having VS Code_)
+    * [python 3.11](https://www.python.org/downloads/)
+        ```console
+        % python3 --version
+        Python 3.10.7
+        ```
     * [pip3](https://pypi.org/project/pip/)
         ```console
         python -m pip install --upgrade pip
@@ -94,12 +98,12 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
 * ## Installing the VS Code extensions
     run the following command in terminal window
     * ### Linux / macOS
-        open a terminal window and run this from project directory root
+        open a terminal window and run this from project directory root:
         ```console
         % ./extensions/vs_code_extensions.sh
         ```
     * ### Windows powershell
-        open a command prompt from start menu and cd into project root directory and run this
+        open a powershell prompt from start menu and cd into project root directory and run this:
         ```console
         :\> cmd.exe /c ".\extensions\vs_code_extensions.bat"
         ```

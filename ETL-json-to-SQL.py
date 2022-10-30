@@ -21,18 +21,19 @@ if __name__ == '__main__':
     ############# FLATTENING AND NORMALIZATION OF TABLES ###############
     ####################################################################
 
-    # This is normalized flat table which wont work as already discussed in notebook analysis
+    # This is de-normalized flat table which wont work as already discussed in notebook analysis
+    # so we will try to normalize this into 2NF form as explain in notebook analysis
     events_denormalized_df = pd.json_normalize(events, max_level=4)
 
     # pandas's json_normalize() works like a charm on nested "dictionary of dictionaries"
     # but fails to implictly flatten value of a key if its "list of dictionaries".
-    # so below code hack  (line #30 to #33) is needed
+    # so below code hack  (line #31 to #34) is needed
     for event in events:
         u.find_values_as_list_of_dicts(event)
     u.VALUE_AS_LIST = list(set(u.VALUE_AS_LIST))
     events_denormalized_df = u.flatten_list_of_dict_keys_to_seperate_columns(events_denormalized_df)
 
-    # line #36 through #39 takes care of normalizing large flat table into seperate smaller tables dictionary
+    # line #37 through #40 takes care of normalizing large flat table into seperate smaller tables dictionary
     sorted_col_list = events_denormalized_df.columns.tolist()
     sorted_col_list.sort()
     u.seperate_table_from_flattened_col_list(sorted_col_list)
