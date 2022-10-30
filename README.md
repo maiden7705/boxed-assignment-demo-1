@@ -66,33 +66,33 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
 * ## Open VS Code from project folder
     ```console
     % cd ~/{your-project-directory}/boxed-assignment-demo-1
-    code .
+    % code .
     ```
 
 * ## Install python virtual environment
     Open a new [VS Code Terminal](https://code.visualstudio.com/docs/terminal/basics) in opened project folder
     ```console
-    python3 -m pip install virtualenv
-    mkdir .env
-    cd .env
-    python3 -m virtualenv .
+    % python3 -m pip install virtualenv
+    % mkdir .env
+    % cd .env
+    % python3 -m virtualenv .
     ```
 
 * ## Install all the pre-requisite libraries
     ```console
-    pip install -r ./docker/python3/requirements.txt
+    % pip install -r ./docker/python3/requirements.txt
     ```
 * ## Installing the VS Code extensions
     run the following command in terminal window
     * ### Linux / macOS
         open a terminal window and run this from project directory root
         ```console
-        ./extensions/vs_code_extensions.sh
+        % ./extensions/vs_code_extensions.sh
         ```
     * ### Windows
         open a command prompt from start menu and cd into project root directory and run this
         ```console
-        cmd.exe /c ".\extensions\vs_code_extensions.bat"
+        :\> cmd.exe /c ".\extensions\vs_code_extensions.bat"
         ```
 
 * ## Running the code
