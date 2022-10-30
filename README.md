@@ -85,7 +85,7 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
     ```
 
 * ## Install python virtual environment
-    Open a new [VS Code Terminal](https://code.visualstudio.com/docs/terminal/basics) in project root folder
+    Open a new [VS Code Terminal](https://code.visualstudio.com/docs/terminal/basics) in project root folder, and run these commands:
     ```console
     % python3 -m pip install virtualenv
     % mkdir .env
@@ -93,7 +93,7 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
     % python3 -m virtualenv .
     ```
 
-* ## Install all the pre-requisite libraries
+* ## Install all the pre-requisite python libraries
     
     * ### Linux / macOS
         ```console
@@ -105,7 +105,7 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
         ```
 
 * ## Installing the VS Code extensions
-    run the following command in terminal window  
+    run the following command in [VS Code Terminal](https://code.visualstudio.com/docs/terminal/basics) window
     (_**NOTE**: These are all the extensions I have installed, some of which may or may not be needed to explore this code in VS Code, but safe to just replicate_)
     * ### Linux / macOS
         open a terminal window and run this from project directory root:
