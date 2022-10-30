@@ -1,4 +1,6 @@
 .env
+.devcontainer
+__pycache__
 random_code_tryouts.py
 output_data_formats/
 pip_package_dependency.txt
