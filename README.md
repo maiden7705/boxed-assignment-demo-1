@@ -51,6 +51,7 @@ Expand the database **web_scraping** to see the 2NF normalized table structure
 % cd ~/{your-project-directory}/boxed-assignment-demo-1
 % docker-compose down
 % docker image rm --force $(docker images | grep boxed* | awk '{print $1}')
+% docker volume rm --force $(docker volume ls | grep boxed* | awk '{print $2}')
 ```
 
 # Running in Host (VS Code) [OPTIONAL]
