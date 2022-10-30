@@ -35,7 +35,7 @@ __IMPORTANT NETWORK REQUIREMENT__:
 % docker exec -i -t python3.11 bash
 % python ETL-json-to-SQL.py
 ```
-This will put normalized 2NF table structure into database called **web_scraping**
+This will put normalized 2NF table structure into database called **web_scraping** _(I previously thought this was a web scraping bot json :smiley: )_
 ## Checking Database
     http://localhost:8081/
 
