@@ -1,4 +1,4 @@
-cmd.exe /c code --install-extension amazonwebservices.aws-toolkit-vscmd.exe /c code --force &
+cmd.exe /c code --install-extension amazonwebservices.aws-toolkit-vscmd.exe --force &
 cmd.exe /c code --install-extension GrapeCity.gc-excelviewer --force &
 cmd.exe /c code --install-extension hilleer.yaml-plus-json --force &
 cmd.exe /c code --install-extension joaompinto.vscode-graphviz --force &
