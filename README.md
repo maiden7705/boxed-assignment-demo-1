@@ -32,7 +32,7 @@ __IMPORTANT NETWORK REQUIREMENT__:
     * [phpmyadmin-5.0](https://hub.docker.com/_/phpmyadmin), (_Database web client_: to view tables)
 ## Running ETL Code
 ```console
-% docker exec -i -t python3.11 bash
+% docker exec -i -t python3.10 bash
 % python ETL-json-to-SQL.py
 ```
 This will put normalized 2NF table structure into database called **web_scraping** _(I previously thought this was a web scraping bot json :smiley: )_
