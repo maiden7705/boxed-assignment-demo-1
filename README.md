@@ -36,13 +36,13 @@ __IMPORTANT NETWORK REQUIREMENT__:
 % docker exec -i -t python3.10 bash
 % python ETL-json-to-SQL.py
 ```
-This will put normalized 2NF table structure into database called **web_scraping** _(I previously thought this was a web scraping bot json :smiley: )_
+This will run the above python script in python-3.10 container and convert [source JSON](/Requirement/testEventData-1.txt) to a normalized [2NF](https://www.1keydata.com/database-normalization/second-normal-form-2nf.php) table structure into database called **web_scraping** in mySql-8.0 container _(I previously thought this was a web scraping bot json :smiley: )_
 ## Checking Database
     http://localhost:8081/
 
 ![sql client homepage](/documentations/sql_client_homepage.png)
 
-Expand the database **web_scraping** to see the 2NF normalized table structure
+Expand the database **web_scraping** to see the [2NF](https://www.1keydata.com/database-normalization/second-normal-form-2nf.php) normalized tables for each nested key in [source JSON](/Requirement/testEventData-1.txt)
 
 ![sql client tables](/documentations/sql_client_checking_tables.png)
 
@@ -123,7 +123,7 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
     ![Run the scripot](/documentations/running_the_Script.png)
 
 # Understanding of JSON structure
-To understand the design justification of 2NF normalized form of seperate tables, refer to this [jupyter notebook](/Requirement/understanding_json_structure.ipynb)
+To understand the design justification of [2NF](https://www.1keydata.com/database-normalization/second-normal-form-2nf.php) normalized form of seperate tables, refer to this [jupyter notebook](/Requirement/understanding_json_structure.ipynb)
 
 _NOTE : I have modified the **[testEventData-1.txt](Requirement/testEventData-1.txt)** file at line 251 to test out multi dictionary list of **properties.variants**_
 
