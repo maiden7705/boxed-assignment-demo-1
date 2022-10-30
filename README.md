@@ -112,7 +112,7 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
         % ./extensions/vs_code_extensions.sh
         ```
     * ### Windows powershell
-        open a powershell prompt from start menu and cd into project root directory and run this:
+        open a command prompt window and run this from project directory root:
         ```console
         :\> cmd.exe /c ".\extensions\vs_code_extensions.bat"
         ```
