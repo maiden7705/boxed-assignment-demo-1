@@ -41,6 +41,8 @@ This will put normalized 2NF table structure into database called **web_scraping
 
 ![sql client homepage](/documentations/sql_client_homepage.png)
 
+Expand the database **web_scraping** to see the 2NF normalized table structure
+
 ![sql client tables](/documentations/sql_client_checking_tables.png)
 
 # Running in Host (VS Code) [OPTIONAL]
@@ -70,7 +72,7 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
     ```
 
 * ## Install python virtual environment
-    Open a new [VS Code Terminal](https://code.visualstudio.com/docs/terminal/basics) in opened project folder
+    Open a new [VS Code Terminal](https://code.visualstudio.com/docs/terminal/basics) in project root folder
     ```console
     % python3 -m pip install virtualenv
     % mkdir .env
@@ -79,9 +81,16 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
     ```
 
 * ## Install all the pre-requisite libraries
-    ```console
-    % pip install -r ./docker/python3/requirements.txt
-    ```
+    
+    * ### Linux / macOS
+        ```console
+        % pip install -r ./docker/python3/requirements.txt
+        ```
+    * ### Windows powershell
+        ```console
+        % pip install -r .\docker\python3\requirements.txt
+        ```
+
 * ## Installing the VS Code extensions
     run the following command in terminal window
     * ### Linux / macOS
@@ -89,7 +98,7 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
         ```console
         % ./extensions/vs_code_extensions.sh
         ```
-    * ### Windows
+    * ### Windows powershell
         open a command prompt from start menu and cd into project root directory and run this
         ```console
         :\> cmd.exe /c ".\extensions\vs_code_extensions.bat"
