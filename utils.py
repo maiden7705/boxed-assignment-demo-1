@@ -217,7 +217,7 @@ def get_host_name():
 
   RETURNS
   -------
-  `172.17.0.1` \u27A4 inside docker container\u000A
+  `db` \u27A4 inside docker container\u000A
   `localhost` \u27A4 host machine IDE\u000A
   '''
   SECRET_KEY = os.environ.get('IS_RUNNING_IN_CONTAINER', False)

@@ -4,6 +4,7 @@ Make sure you have the following installed and appropriate **$PATH** modificatio
 
 * **git** (_version 2.37.x_)
 * **docker** (_version 20.x_) (_[Docker Desktop](https://www.docker.com/products/docker-desktop/) recommended_)
+* Atleast **3 GB** of space for the docker images and container
 
 _NOTE : I have not tested this to older versions of above pre-requisites_
 
