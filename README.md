@@ -68,7 +68,7 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
         ```
     * [pip3](https://pypi.org/project/pip/)
         ```console
-        python -m pip install --upgrade pip
+        % python -m pip install --upgrade pip
         ```
 
 * ## Cloning the Repo
