@@ -39,7 +39,7 @@ __IMPORTANT NETWORK REQUIREMENT__:
 This will run the above python script in python-3.10 container and convert [source JSON](/Requirement/testEventData-1.txt) to a normalized [2NF](https://www.1keydata.com/database-normalization/second-normal-form-2nf.php) table structure into database called **web_scraping** in mySql-8.0 container _(I previously thought this was a web scraping bot json :smiley:, hence the name! )_
 ## Checking Database
     http://localhost:8081/
-
+server&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  _leave it blank_  
 username : **root**  
 password : **password**
 ![sql client ogin](/documentations/sql_client_login.png)
