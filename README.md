@@ -40,6 +40,10 @@ This will run the above python script in python-3.10 container and convert [sour
 ## Checking Database
     http://localhost:8081/
 
+username : **root**  
+password : **password**
+![sql client ogin](/documentations/sql_client_login.png)
+
 ![sql client homepage](/documentations/sql_client_homepage.png)
 
 Expand the database **web_scraping** to see the [2NF](https://www.1keydata.com/database-normalization/second-normal-form-2nf.php) normalized tables for each nested key in [source JSON](/Requirement/testEventData-1.txt)
