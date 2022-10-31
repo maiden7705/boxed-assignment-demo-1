@@ -106,11 +106,11 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
         ```
     * ### Windows powershell
         ```console
-        % source .env\Scripts\activate.ps1
+        % .env\Scripts\activate.ps1
         ```
     * ### Windows command prompt
         ```console
-        % source .env\Scripts\activate.bat
+        % cmd.exe /c .env\Scripts\activate.bat
         ```
 
 * ## Install all the pre-requisite python libraries
