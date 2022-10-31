@@ -93,9 +93,25 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
     ```console
     % python3 -m pip install virtualenv
     % mkdir .env
-    % cd .env
-    % python3 -m virtualenv .
+    % virtualenv .env
     ```
+    Moment a virtual environment creation is detected at project root, VS Code is smart enough to ask for making it your primary python interpreter
+    ![activate virtualenv](/documentations/activating%20virtual_env.png)
+    
+    If a prompt is not provided like shown above, you can manually activate a virtualenv with commands below (in different OS)
+
+    * ### Linux / macOS
+        ```console
+        % source .env/bin/activate
+        ```
+    * ### Windows powershell
+        ```console
+        % source .env\Scripts\activate.ps1
+        ```
+    * ### Windows command prompt
+        ```console
+        % source .env\Scripts\activate.bat
+        ```
 
 * ## Install all the pre-requisite python libraries
     
