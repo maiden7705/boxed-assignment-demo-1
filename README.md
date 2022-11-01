@@ -93,7 +93,7 @@ If you choose to see or debug the project in [VS code](https://code.visualstudio
     ```console
     % python3 -m pip install virtualenv
     % mkdir .env
-    % virtualenv .env
+    % python -m virtualenv .env
     ```
     Moment a virtual environment creation is detected at project root, VS Code is smart enough to ask for making it your primary python interpreter
     ![activate virtualenv](/documentations/activating%20virtual_env.png)
